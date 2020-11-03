@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/toggle.css">
+     <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Introduction-->
+    <div class="t">
+      <section class="header">
+        
+        <div class="intro">
+          <h1 class="section__title section__title--intro">Social Media Dashboard</h1>
+          <p class="section__subtitle section__subtitle--intro" >Total Followers : 20,304</p>
+        </div>
+        
+        <div class="toggle-area">
+          <span>Dark Mode</span>
+          <label class="switch">
+          <input type="checkbox" onchange="toggleTheme()">
+              <span class="slider round"></span>
+              </label>
+        </div>
+
+      </section>
+</div>
+      <section class="stats-area">
+      <div class="cards">
+      <!--CARD I-->
+      <div class="cards__item" id="card_1">
+        <div class="cards__media-icon"><i class="fab fa-facebook-square" style="color:#0597f2;"></i>
+        <span>@nathanf</span>
+        </div>
+        <div class="count">1987</div>
+        <div class="followers">FOLLOWERS</div>
+        <div class="count-change"><i class="fas fa-caret-up"></i>
+          <span class="increase">12 Today</span></div>
+        </div>
+    <!-- CARD II-->
+     <div class="cards__item" id="card_2">
+        <div class="cards__media-icon"><i class="fab fa-twitter" style="color:#0597f2"></i>
+          <span>@nathanf</span>
+        </div>
+        <div class="count">1044</div>
+        <div class="followers">FOLLOWERS</div>
+        <div><i class="fas fa-caret-up"></i>
+          <span style="color: green;">99 Today</span>
+        </div>
+     </div>
+<!-- CARD III-->
+<div class="cards__item" id="card_3">
+  <div class="cards__media-icon"><i class="fab fa-instagram"></i><span>@nathanf</span></div>
+  <div class="count">1987</div>
+  <div class="followers">FOLLOWERS</div>
+  <div class="count-change"><i class="fas fa-caret-up"></i>
+    <span class="increase">12 Today</span>
+  </div>
+</div>
+<!-- CARD IV-->
+    <div class="cards__item" id="card_4">
+    <div class="cards__media-icon"><i class="fab fa-youtube"></i>
+      <span>@nathanf</span>
+    </div>
+    <div class="count">1987</div>
+    <div class="followers">FOLLOWERS</div>
+    <div class="count-change"><i class="fas fa-caret-down"></i>
+      <span class="decrease">144 Today</span></div>
+    </div>
+  </div>
+</section>
+  <!-- Overview Section-->
+  <section class="overview">
+    <div class="heading--overview">
+      <h3>Overview - Today</h3>
+    </div>
+    <div class="cards--overview">
+          <div class="card--overview " id="overview-card-1">
+              <div class=" top-left ">Page Views</div>
+              <div class="top-right"><i class="fab fa-facebook-square" style="color:#0597f2;"></i></div>
+              <div class="bottom-left">87</div>
+              <div class="bottom-right"><i class="fas fa-caret-up"></i>303%</div>
+          </div>
+        
+          
+      
+        <div class="card--overview " id="overview-card-1">
+          <div class=" top-left ">Likes</div>
+          <div class="top-right"><i class="fab fa-facebook-square" style="color:#0597f2;"></i></div>
+          <div class="s bottom-left">87</div>
+          <div class="bottom-right"><i class="fas fa-caret-up"></i>303%</div>
+        </div>
+      
+
+      
+      <div class="card--overview">
+        <div class=" top-left ">Likes</div>
+        <div class="top-right"><i class="fab fa-instagram"></i></div>
+        <div class="s bottom-left">87</div>
+        <div class="bottom-right"><i class="fas fa-caret-up"></i>303%</div>
+      </div>
+      <div class="card--overview">
+        <div class="top-left ">Profile Views</div>
+        <div class="top-right"><i class="fab fa-instagram"></i></div>
+        <div class="s bottom-left">87</div>
+        <div class="bottom-right"><i class="fas fa-caret-up"></i>303%</div>
+      </div>
+      <div class="card--overview">
+        <div class=" top-left ">Retweets</div>
+        <div class="top-right"><i class="fab fa-twitter" style="color:#0597f2"></i></i></div>
+        <div class="s bottom-left">87</div>
+        <div class="bottom-right"><i class="fas fa-caret-up"></i>303%</div>
+      </div>
+      <div class="card--overview">
+        <div class=" top-left ">Likes</div>
+        <div class="top-right"><i class="fab fa-twitter" style="color:#0597f2"></i></div>
+        <div class="s bottom-left">87</div>
+        <div class="bottom-right"><i class="fas fa-caret-up"></i>303%</div>
+      </div>
+      <div class="card--overview">
+        <div class=" top-left ">Likes</div>
+        <div class="top-right"><i class="fab fa-youtube"></i></div>
+        <div class="bottom-left">87</div>
+        <div class="bottom-right decrease"><i class="fas fa-caret-down"></i>12%</div>
+      </div>
+      <div class="card--overview">
+        <div class="top-left">Total Views</div>
+        <div class="top-right"><i class="fab fa-youtube"></i></div>
+        <div class="bottom-left">87</div>
+        <div class="bottom-right decrease"><i class="fas fa-caret-down"></i>19%</div>
+      </div>
+    
+      </div>
+  </section>
+  <script>
+    function toggleTheme(){
+      var element = document.body;
+      element.classList.toggle("light-mode");
+
+       var div = document.getElementsByClassName("toggle-area");
+     
+       var mode = div[0].firstChild.nextSibling.innerHTML;
+   
+       if(mode == "Dark Mode"){
+        div[0].firstChild.nextSibling.innerHTML = "Light Mode";
+       }else{
+        div[0].firstChild.nextSibling.innerHTML = "Dark Mode";
+       }
+    }
+  </script>
+  </body>
+  
+</html>
